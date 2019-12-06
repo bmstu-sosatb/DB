@@ -27,15 +27,6 @@ def create_passengers():
 
     f.close()
 
-
-def create_companies():
-    f = open("companies.csv", "w")
-    for i in range(N):
-        line = "{0},{1},{2}\n".format(i + 1, '"'+fake.company()+'"', random.randint(5, 200))
-        f.write(line)
-
-    f.close()
-
 def create_airports():
     num = 0
     cities = []
@@ -87,7 +78,7 @@ def create_flights():
         dm = random.randint(0, 60)
         #print((deptime.hour + dh) % 24, deptime.hour + dh, dh)
         artime = artime.replace(hour=((deptime.hour + dh) % 24), minute=((deptime.minute + dm) % 60))
-        line = "{0},{1},{2},{3},{4},{5}\n".format(flnum, apdep, apar, fortime(deptime.hour) + ":" + fortime(deptime.minute), fortime(artime.hour) + ":" + fortime(artime.minute), random.randint(1,1000))
+        line = "{0},{1},{2},{3},{4},{5}\n".format(flnum, apdep, apar, fortime(deptime.hour) + ":" + fortime(deptime.minute), fortime(artime.hour) + ":" + fortime(artime.minute), fake.company())
         f.write(line)
 
     f.close()
@@ -102,7 +93,6 @@ def create_pf():
 
 if __name__ == "__main__":
     '''create_passengers()
-    create_companies()
     create_airports()
     create_flights()
     create_pf()'''
