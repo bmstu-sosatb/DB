@@ -1,0 +1,5 @@
+C:\Users\Юлия\Documents\SQL Server Management Studio\flights\CLR\CLR\obj\Debug\CLR.csproj.CoreCompileInputs.cache
+C:\Users\Юлия\Documents\SQL Server Management Studio\flights\CLR\CLR\bin\Debug\CLR.dll
+C:\Users\Юлия\Documents\SQL Server Management Studio\flights\CLR\CLR\bin\Debug\CLR.pdb
+C:\Users\Юлия\Documents\SQL Server Management Studio\flights\CLR\CLR\obj\Debug\CLR.dll
+C:\Users\Юлия\Documents\SQL Server Management Studio\flights\CLR\CLR\obj\Debug\CLR.pdb

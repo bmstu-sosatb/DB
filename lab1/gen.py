@@ -60,8 +60,8 @@ def fortime(d):
         return "0"+str(d)
     return str(d)
 
+flights = []
 def create_flights():
-    flights = []
     f = open("flights.csv", "w")
     for i in range(N):
         flnum = random.randint(10000, 99999)
@@ -86,7 +86,7 @@ def create_flights():
 def create_pf():
     f = open("pf.csv", "w")
     for i in range(N):
-        line = "{0},{1},{2}\n".format(random.randint(1,1000), random.randint(1,1000), fake.date_between(start_date = "-3y", end_date = "+1y"))
+        line = "{0},{1},{2}\n".format(random.randint(1,1000), random.choice(flights), fake.date_between(start_date = "-3y", end_date = "+1y"))
         f.write(line)
 
     f.close()

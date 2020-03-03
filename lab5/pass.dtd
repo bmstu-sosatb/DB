@@ -1,0 +1,6 @@
+<!ELEMENT Device (row*)>
+<!ELEMENT row (PassID, FirstName, SecondName, PassportNumber)>
+<!ELEMENT PassID (#PCDATA)>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT SecondName (#PCDATA)>
+<!ELEMENT PassportNumber (#PCDATA)>
